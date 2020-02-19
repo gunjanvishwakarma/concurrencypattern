@@ -16,7 +16,7 @@ public class AccountLockBasedSyncronization
         adjustBy(amount, System.currentTimeMillis());
     }
     
-    public synchronized void transferTo(AccountSTMBasedSynchronization other, int amount)
+    public synchronized void transferTo(AccountLockBasedSyncronization other, int amount)
     {
         long date = System.currentTimeMillis();
         adjustBy(-amount, date);
